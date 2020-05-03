@@ -1,5 +1,17 @@
 <template>
-  <span>Result: {{ result.data }}</span>
+  <div>
+    <input
+      v-model="value"
+      @keypress="isNumber($event)"
+      @keyup="getData(value)"
+    />
+    <br />
+    <span>Input A: {{ result.data[0] }}</span
+    ><br />
+    <span>Input B: {{ result.data[1] }}</span
+    ><br />
+    <span>Input C: {{ result.data[2] }}</span>
+  </div>
 </template>
 
 <script>
@@ -12,11 +24,13 @@ export default {
   data() {
     return {
       result: [],
+      value: 21,
     };
   },
   methods: {
-    getData: async function() {
-      this.result = await axios.get(`/api/findpattern`);
+    getData: async function(values) {
+      values = this.value;
+      this.result = await axios.get(`/api/findvalue/value=` + values);
       console.log(this.result.data);
     },
   },
@@ -27,5 +41,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
+<style scoped></style>

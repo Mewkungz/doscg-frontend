@@ -9,7 +9,7 @@ export default {
   name: "CV",
   props: {
     msg: String,
-  },
+  }
 };
 </script>
 

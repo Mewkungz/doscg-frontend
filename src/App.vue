@@ -27,10 +27,13 @@
             <a class="nav-link" href="/#/findpattern">Find Pattern</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Find BC</a>
+            <a class="nav-link" href="/#/findBC">Find BC</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Map</a>
+            <a class="nav-link" href="/map">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/line">Line</a>
           </li>
         </ul>
       </div>
