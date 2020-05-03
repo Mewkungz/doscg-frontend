@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-      <a class="navbar-brand" href="#">DOSCG</a>
+      <a class="navbar-brand" href="/">DOSCG</a>
 
       <button
         class="navbar-toggler"
@@ -30,10 +30,10 @@
             <a class="nav-link" href="/#/findBC">Find BC</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/map">Map</a>
+            <a class="nav-link" href="/#/map">Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/line">Line</a>
+            <a class="nav-link" href="/#/line">Line</a>
           </li>
         </ul>
       </div>
